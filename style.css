@@ -776,3 +776,8 @@ button {
   height: 100%;
   object-fit: cover;
 }
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
