@@ -7,6 +7,20 @@
   var dropdownItem = document.querySelector(".has-dropdown");
   var dropdownBtn = document.querySelector(".dropdown-toggle");
 
+  /* ---------- Pindahkan tombol tema ke luar menu burger ---------- */
+  var headerInner = header.querySelector(".header-inner");
+  var themeBtnEl = document.getElementById("themeToggle");
+  if (headerInner && themeBtnEl) {
+    var themeLi = themeBtnEl.closest("li");
+    var kanan = document.createElement("div");
+    kanan.className = "header-right";
+    headerInner.appendChild(kanan);
+    kanan.appendChild(nav);
+    kanan.appendChild(themeBtnEl);
+    kanan.appendChild(navToggle);
+    if (themeLi) themeLi.remove();
+  }
+
   /* ---------- Tandai menu aktif berdasarkan nama file ---------- */
   var current = location.pathname.split("/").pop() || "index.html";
   var contentPages = [

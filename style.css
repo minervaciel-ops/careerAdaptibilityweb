@@ -18,6 +18,9 @@
   --accent-soft: rgba(31, 58, 95, 0.1);
   --header-bg: rgba(247, 248, 250, 0.92);
   --hover: rgba(27, 36, 48, 0.05);
+  --header-h: 68px;
+  --radius: 14px;
+  --shadow: 0 6px 24px rgba(20, 23, 28, 0.08);
 }
 :root[data-theme="dark"] {
   color-scheme: dark;
