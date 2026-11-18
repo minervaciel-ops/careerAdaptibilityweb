@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Poster</title>
+    <meta name="description" content="Galeri desain poster." />
+    <link rel="stylesheet" href="style.css" />
+    <script>
+      (function () {
+        try {
+          var t = localStorage.getItem("theme");
+          if (!t)
+            t = matchMedia("(prefers-color-scheme: dark)").matches
+              ? "dark"
+              : "light";
+          document.documentElement.setAttribute("data-theme", t);
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body>
+    <header class="site-header" id="siteHeader">
+      <div class="container header-inner">
+        <a href="index.html" class="logo">CareerAdaptibility</a>
+        <button class="nav-toggle" aria-label="Buka menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="main-nav" id="mainNav" aria-label="Navigasi utama">
+          <ul>
+            <li><a href="index.html">Halaman Muka</a></li>
+            <li class="has-dropdown">
+              <button
+                class="dropdown-toggle"
+                aria-expanded="false"
+                aria-haspopup="true"
+              >
+                Konten
+                <svg
+                  viewBox="0 0 12 12"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M2 4l4 4 4-4" />
+                </svg>
+              </button>
+              <ul class="dropdown">
+                <li><a href="artikel.html">Artikel</a></li>
+                <li><a href="live-streaming.html">Live Streaming</a></li>
+                <li><a href="podcast.html">Podcast</a></li>
+                <li><a href="poster.html">Poster</a></li>
+                <li><a href="infografis.html">Infografis</a></li>
+              </ul>
+            </li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li>
+              <button
+                class="theme-toggle"
+                id="themeToggle"
+                type="button"
+                aria-label="Ganti mode gelap/terang"
+                title="Ganti tema"
+              >
+                <span class="icon-moon">☾</span><span class="icon-sun">☀</span>
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-title">
+        <div class="container">
+          <h1>Poster</h1>
+          <p>
+            Rangkaian desain poster untuk acara, kampanye sosial, dan promosi
+            produk.
+          </p>
+        </div>
+      </section>
+
+      <section class="section" style="padding-top: 12px">
+        <div class="container">
+          <div
+            class="grid"
+            style="grid-template-columns: repeat(auto-fill, minmax(220px, 1fr))"
+          >
+            <article class="card">
+              <div class="thumb portrait g1">A</div>
+              <div class="card-body">
+                <span class="tag">Acara</span>
+                <h3>Festival Musik Akhir Tahun</h3>
+                <div class="meta">A3 · Cetak &amp; digital</div>
+              </div>
+            </article>
+            <article class="card">
+              <div class="thumb portrait g2">B</div>
+              <div class="card-body">
+                <span class="tag">Kampanye</span>
+                <h3>Gerakan Bersih Sungai</h3>
+                <div class="meta">A3 · Cetak &amp; digital</div>
+              </div>
+            </article>
+            <article class="card">
+              <div class="thumb portrait g3">C</div>
+              <div class="card-body">
+                <span class="tag">Pameran</span>
+                <h3>Pameran Seni Rupa Muda</h3>
+                <div class="meta">A2 · Cetak</div>
+              </div>
+            </article>
+            <article class="card">
+              <div class="thumb portrait g4">D</div>
+              <div class="card-body">
+                <span class="tag">Promosi</span>
+                <h3>Peluncuran Kopi Nusantara</h3>
+                <div class="meta">A4 · Digital</div>
+              </div>
+            </article>
+            <article class="card">
+              <div class="thumb portrait g5">E</div>
+              <div class="card-body">
+                <span class="tag">Edukasi</span>
+                <h3>Pekan Literasi Digital</h3>
+                <div class="meta">A3 · Cetak &amp; digital</div>
+              </div>
+            </article>
+            <article class="card">
+              <div class="thumb portrait g6">F</div>
+              <div class="card-body">
+                <span class="tag">Komunitas</span>
+                <h3>Pasar Kreatif Lingkungan</h3>
+                <div class="meta">A3 · Cetak</div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <span
+          >© <span id="year">2026</span> CareerAdaptibility Team Seluruh hak
+          cipta dilindungi.</span
+        >
+        <span>@sulhannn_</span>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

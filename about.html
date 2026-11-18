@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us | Team 1</title>
+    <meta name="description" content="Tentang kami dan cara kami bekerja." />
+    <link rel="stylesheet" href="style.css" />
+    <script>
+      (function () {
+        try {
+          var t = localStorage.getItem("theme");
+          if (!t)
+            t = matchMedia("(prefers-color-scheme: dark)").matches
+              ? "dark"
+              : "light";
+          document.documentElement.setAttribute("data-theme", t);
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body>
+    <header class="site-header" id="siteHeader">
+      <div class="container header-inner">
+        <a href="index.html" class="logo">CareerAdaptibility</a>
+        <button class="nav-toggle" aria-label="Buka menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="main-nav" id="mainNav" aria-label="Navigasi utama">
+          <ul>
+            <li><a href="index.html">Halaman Muka</a></li>
+            <li class="has-dropdown">
+              <button
+                class="dropdown-toggle"
+                aria-expanded="false"
+                aria-haspopup="true"
+              >
+                Konten
+                <svg
+                  viewBox="0 0 12 12"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M2 4l4 4 4-4" />
+                </svg>
+              </button>
+              <ul class="dropdown">
+                <li><a href="artikel.html">Artikel</a></li>
+                <li><a href="live-streaming.html">Live Streaming</a></li>
+                <li><a href="podcast.html">Podcast</a></li>
+                <li><a href="poster.html">Poster</a></li>
+                <li><a href="infografis.html">Infografis</a></li>
+              </ul>
+            </li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li>
+              <button
+                class="theme-toggle"
+                id="themeToggle"
+                type="button"
+                aria-label="Ganti mode gelap/terang"
+                title="Ganti tema"
+              >
+                <span class="icon-moon">☾</span><span class="icon-sun">☀</span>
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-title">
+        <div class="container">
+          <h1>About Us</h1>
+          <p>kelompok 1</p>
+        </div>
+      </section>
+
+      <section class="section" style="padding-top: 12px">
+        <div class="container">
+          <div class="about-grid">
+            <div class="about-photo g1">K</div>
+            <div class="about-text">
+              <h2>Lorem, ipsum.</h2>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Facilis tenetur ratione iusto enim fugit facere.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
+                quae sit repudiandae!
+              </p>
+              <a href="faq.html" class="btn">Lorem, ipsum.</a>
+            </div>
+          </div>
+
+          <div class="stats">
+            <div class="stat"><strong>120+</strong><span>Artikel </span></div>
+            <div class="stat"><strong>60+</strong><span>lorem</span></div>
+            <div class="stat"><strong>40+</strong><span>lorem</span></div>
+            <div class="stat"><strong>200+</strong><span>lorem</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-head"><h2>isi abt us</h2></div>
+          <div class="grid">
+            <div class="card">
+              <div class="card-body">
+                <h3>misal : akurat</h3>
+                <p>Lorem ipsum dolor sit.</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h3>misal: Jernih</h3>
+                <p>Lorem ipsum dolor sit..</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h3>misal: Terbuka</h3>
+                <p>Lorem ipsum dolor sit.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <span
+          >© <span id="year">2026</span> CareerAdaptibility Seluruh hak cipta
+          dilindungi.</span
+        >
+        <span>@sulhannn_</span>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
